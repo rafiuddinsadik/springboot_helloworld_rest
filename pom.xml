@@ -13,6 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>Simple_REST_Service</name>
     <description>Simple_REST_Service</description>
+    <packaging>war</packaging>
     <properties>
         <java.version>17</java.version>
     </properties>
