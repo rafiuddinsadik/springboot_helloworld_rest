@@ -8,10 +8,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/")
 public class ApiController {
 
-    @RequestMapping("/welcomeMe")
+    @RequestMapping("/")
+    public String index(){
+        return "Hello From Spring Boot";
+    }
+
+    @RequestMapping("/api/welcomeMe")
     public Map<String, String> welcomeMe(){
         HashMap<String, String> map = new HashMap<>();
         map.put("message", "Welcome {Rafi Uddin}");
